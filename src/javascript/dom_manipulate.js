@@ -31,7 +31,7 @@ export  const dom_manipulation = () => {
 
         else {
             const data = await api__data(inputOfUser.value);
-            console.log(data);
+            console.log("MUji herxas mero console.");
             updateElement('.place', capitalizeFirstLetter(data.address), data.timezone.split('/')[0]);
             updateElement('.dateandtime', '', `${data.days[0].datetime} <br> ${data.currentConditions.datetime}`);
             updateElement('.tempmax', 'Max Temp', data.days[0].tempmax);
